@@ -1,0 +1,24 @@
+.tilt-card-container {
+  position: relative;
+  height: 450px;
+  width: 350px;
+  border-radius: 1.5rem;
+  background: linear-gradient(to bottom right, #13678A, #9AEBA3);
+}
+
+.tilt-card-inner {
+  position: absolute;
+  inset: 1rem;
+  display: grid;
+  place-content: center;
+  border-radius: 1rem;
+  background-color: #010D14; /* Color oscuro de la tarjeta */
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+}
+
+
+.imagen{
+  border-radius: 1rem;
+  height: 390px;
+  width:290px;
+}
