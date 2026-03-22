@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import Navbar from './Navbar'
 import FotoInicio from './FotoInicio'
+import BotonInicio from './BotonInicio'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -26,6 +27,7 @@ function App() {
             <FotoInicio/>
           </div>
         </section>
+        <BotonInicio/>
       </div>
     </>
   )

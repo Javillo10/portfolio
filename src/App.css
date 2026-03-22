@@ -5,12 +5,13 @@
 
 .inicio{
   width: 100%; 
-  height: 730px;
+  height: 670px;
   padding: 0 100px;
 
   display: flex;
   flex-direction: row;
   align-items: center;
+  flex-wrap: wrap;
 
   /*border: 5px solid green;*/
 }
@@ -28,7 +29,8 @@
   height: 55px;
   font-family: 'Archivo Black', sans-serif;
   text-transform: uppercase; /* Queda muy bien en mayúsculas */
-  font-size: 3rem;
+  /*font-size: 3rem;*/
+  font-size: clamp(1.5rem, 8vw, 3rem);
 }
 
 .nombre{
