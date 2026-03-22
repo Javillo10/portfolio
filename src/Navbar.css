@@ -70,3 +70,10 @@
 .btn:hover {
   opacity: 0.8;
 }
+
+.nav-right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}

@@ -1,0 +1,74 @@
+.Btn {
+  border: none;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: .4s;
+  cursor: pointer;
+  position: relative;
+  background-color: #13678A;
+  overflow: hidden;
+  /* Evita que el botón se deforme si el contenedor padre es pequeño */
+  flex-shrink: 0; 
+}
+
+.Btn .svgIcon {
+  transition-duration: .3s;
+  /* Asegura que el icono no intente ocupar más espacio del debido */
+  width: 1.3em;
+  height: 1.3em;
+}
+
+.Btn .svgIcon path {
+  fill: white;
+}
+
+.Btn .text {
+  position: absolute;
+  color: white;
+  /* Cambiamos width 120px por un ancho relativo al botón expandido */
+  width: 100%; 
+  text-align: center;
+  font-weight: 600;
+  opacity: 0;
+  transition-duration: .4s;
+  /* Evita que el texto salte de línea si es largo */
+  white-space: nowrap; 
+}
+
+.Btn:hover {
+  width: 110px;
+  transition-duration: .4s;
+  border-radius: 30px;
+}
+
+.Btn:hover .text {
+  opacity: 1;
+  transition-duration: .4s;
+}
+
+.Btn:hover .svgIcon {
+  opacity: 0;
+  /* Un pequeño truco visual: que el icono también se encoga */
+  transform: scale(0);
+  transition-duration: .3s;
+}
+
+.btn .a {
+  text-decoration: none; /* Quita el subrayado */
+  color: inherit;       /* Hereda el blanco del botón */
+  display: flex;        /* Mantiene el icono y texto alineados */
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* Evita que el enlace cambie de color al visitarlo */
+.btn .a:visited, 
+.btn .a:active {
+  color: inherit;
+}
